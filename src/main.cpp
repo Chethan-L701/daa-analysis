@@ -7,14 +7,12 @@
 #endif
 
 #ifndef INCLUDED_SORTINGALGO
-#include "sortingalgo.hpp"
+#include "algorithms/sortingalgo.hpp"
 #endif
 
 #ifndef INCLUDED_SORTPERFORMANCE
-#include "sortperformance.hpp"
+#include "performance/sortperformance.hpp"
 #endif
-
-
 
 int main(int argc, char *argv[]){	
 	benchmark<int>(std::stoi(argv[1]));

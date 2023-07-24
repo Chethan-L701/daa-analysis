@@ -91,8 +91,8 @@ int benchmark(int range) {
 	for (int i=1; i <= range;++i){
 		std::cout << "\rSorting for array length : " << i;
 		uvec.clear();
-		uvec = get_ranvec<T>(i);
-		vector<int> ssort(uvec), msort(uvec), isort(uvec), qsort(uvec), bsort(uvec); 
+		uvec = get_ranvec(i);
+		vector<T> ssort(uvec), msort(uvec), isort(uvec), qsort(uvec), bsort(uvec); 
 		file << sel_sort(ssort) << ',' << bubble_sort(bsort) << ',' << ins_sort(isort) << ',' << merge_sort(msort) << ',' << quick_sort(qsort) << '\n';
 	}
 	return 0;
