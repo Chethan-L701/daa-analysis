@@ -1,14 +1,22 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "sortingalgo.hpp"
-#include "sortingalgo.cpp"
+
+#ifndef INCLUDED_ESSENTIALS
 #include "essentials.hpp"
-#include "essentials.cpp"
+#endif
+
+#ifndef INCLUDED_SORTINGALGO
+#include "sortingalgo.hpp"
+#endif
+
+#ifndef INCLUDED_SORTPERFORMANCE
 #include "sortperformance.hpp"
-#include "sortperformance.cpp"
+#endif
+
+
 
 int main(int argc, char *argv[]){	
-	benchmark(std::stoi(argv[1]));
+	benchmark<int>(std::stoi(argv[1]));
 	return 0;
 }
