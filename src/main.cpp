@@ -14,7 +14,7 @@
 #include "performance/sortperformance.hpp"
 #endif
 
-int main(int argc, char *argv[]){	
-	benchmark<int>(std::stoi(argv[1]));
-	return 0;
+int main(int argc, char *argv[]) {
+    benchmark<int>(std::stoi(argv[1]));
+    return 0;
 }
