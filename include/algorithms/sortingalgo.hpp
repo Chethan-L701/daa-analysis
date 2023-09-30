@@ -1,4 +1,4 @@
-#pragma omce
+#pragma once
 
 #define INCLUDED_SORTINGALGO
 #include <vector>
@@ -86,7 +86,7 @@ template <typename T> vector<T> Sort::Merge::sort(vector<T> vec) {
         return vec;
     int mid = vec.size() / 2;
     return (merge(sort(vector<T>(vec.begin(), vec.begin() + mid)),
-                  sort(vector<T>(vec.begin() + mid + 1, vec.end()))));
+                  sort(vector<T>(vec.begin() + mid, vec.end()))));
 }
 
 template <typename T>

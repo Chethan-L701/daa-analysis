@@ -3,3 +3,4 @@ main
 .vscode
 .cache
 *.csv
+session.nvim
